@@ -1,0 +1,46 @@
+body {
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.topnav {
+	background-color: #34ebd8;
+	overflow: hidden;
+}
+
+.topnav a{
+	text-decoration: none;
+	padding :15px 16px;
+	color: #284747;
+	display: inline-block;
+	text-align: center;
+	font-size: 19px;
+}
+
+.topnav a:hover {
+	background-color: #63d4d4;
+
+}
+.topnav .nav-active {
+	background-color: #63d4d4;
+}
+.topnav .icon {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child){display: none}
+	.topnav a.icon{
+		float: right;
+		display: block;
+	}
+	.topnav.responsive {position:relative;}
+	.topnav.responsive a.icon {
+		position :absolute;
+		display: block;
+		text-align: left;
+	}
+}
